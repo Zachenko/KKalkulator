@@ -10,133 +10,210 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/alertcalc"
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
             android:layout_weight="3"
-            android:layout_height="match_parent"
+            android:background="@drawable/border_style"
             android:gravity="bottom|end"
-            android:text=""/>
-        <Button
-            android:onClick="onClear"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/_ac"/>
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text=""
+            android:textSize="30sp" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <Button
-            android:onClick="onDigit"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/_7"/>
-        <Button
-            android:onClick="onDigit"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/_8"/>
-        <Button
-            android:onClick="onDigit"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/_9"/>
-        <Button
-            android:onClick="onDiv"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/_d"/>
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
         <Button
-            android:onClick="onDigit"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="@string/_4"/>
-        <Button
-            android:onClick="onDigit"
-            android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/_5"/>
-        <Button
-            android:onClick="onDigit"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/_6"/>
-        <Button
-            android:onClick="onMul"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/_m"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:onClick="onDigit"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/_1"/>
-        <Button
-            android:onClick="onDigit"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/_2"/>
-        <Button
-            android:onClick="onDigit"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/_3"/>
-        <Button
+            android:backgroundTint="#DD2C00"
             android:onClick="onSub"
+            android:text="@string/_s" />
+
+        <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="@string/_s"/>
+            android:layout_weight="1"
+            android:backgroundTint="#DD2C00"
+            android:onClick="onDiv"
+            android:text="@string/_d" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#DD2C00"
+            android:text="@string/_r"
+            android:onClick="onRoot"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#DD2C00"
+            android:onClick="onAgain"
+            android:text="@string/_ac" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <Button
-            android:onClick="onDigit"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/_0"/>
+
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="@string/_."/>
-        <Button
-            android:onClick="onEqual"
-            android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="@string/_e"/>
-        <Button
+            android:backgroundTint="#DD2C00"
             android:onClick="onAdd"
+            android:text="@string/_a" />
+
+        <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="@string/_a"/>
+            android:layout_weight="1"
+            android:backgroundTint="#DD2C00"
+            android:onClick="onMul"
+            android:text="@string/_m" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#DD2C00"
+            android:text="@string/_p"
+            android:onClick="onExp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#DD2C00"
+            android:text="@string/_c"
+            android:onClick="onClear"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C51162"
+            android:onClick="onDigit"
+            android:text="@string/_7" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C51162"
+            android:onClick="onDigit"
+            android:text="@string/_8" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C51162"
+            android:onClick="onDigit"
+            android:text="@string/_9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C51162"
+            android:onClick="onDigit"
+            android:text="@string/_4" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C51162"
+            android:onClick="onDigit"
+            android:text="@string/_5" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C51162"
+            android:onClick="onDigit"
+            android:text="@string/_6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C51162"
+            android:onClick="onDigit"
+            android:text="@string/_1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C51162"
+            android:onClick="onDigit"
+            android:text="@string/_2" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C51162"
+            android:onClick="onDigit"
+            android:text="@string/_3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C51162"
+            android:onClick="onDigit"
+            android:text="@string/_0" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C51162"
+            android:text="@string/_." />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#C51162"
+            android:onClick="onEqual"
+            android:text="@string/_e" />
     </LinearLayout>
 </LinearLayout>

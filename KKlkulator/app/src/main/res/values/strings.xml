@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">KKalkulator</string>
     <string name="_ac">AC</string>
+    <string name="_c">C</string>
     <string name="_a">+</string>
     <string name="_s">-</string>
     <string name="_m">*</string>
     <string name="_d">÷</string>
+    <string name="_p">^</string>
+    <string name="_r">√</string>
     <string name="_.">.</string>
     <string name="_e">=</string>
     <string name="_0">0</string>
